@@ -2,9 +2,9 @@ import streamlit as st
 from modules.file_upload import handle_file_uploads
 from modules.text_extraction import extract_texts_from_files
 
-def display_ui():
+def display_ui(uploaded_files):
     # 1. Document Upload Interface
-    uploaded_files = handle_file_uploads()  # From File Upload Module
+    # uploaded_files = handle_file_uploads()  # From File Upload Module
     
     # 2. Display Extracted Content
     if uploaded_files:
