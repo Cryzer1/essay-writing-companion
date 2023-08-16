@@ -2,8 +2,6 @@ import os
 import streamlit as st
 from langchain.document_loaders import PyPDFLoader
 
-st.set_page_config(page_title="Essay Writing Companion", page_icon="📝")
-st.title("📝 Essay Writing Companion")
 
 # Function to handle file uploads
 def handle_file_uploads():
