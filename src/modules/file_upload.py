@@ -4,17 +4,10 @@ from langchain.document_loaders import PyPDFLoader
 
 
 # Function to handle file uploads
-def handle_file_uploads():
-    uploaded_files = st.file_uploader(
-        label="Upload your essay assignment and readings (PDF format)",
-        type=["pdf"],
-        accept_multiple_files=True
-    )
+def handle_file_uploads(uploaded_files):
+    
 
-    # Validate the uploaded files
-    if not uploaded_files:
-        st.info("Please upload your documents in PDF format to proceed.")
-        return None
+    
 
     # (Optional) Check file sizes as an additional validation step
     # for file in uploaded_files:
